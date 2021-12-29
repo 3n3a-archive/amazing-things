@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;500;600;900&display=swap");
+:root {
+  font-family: "Noto Sans Mono", monospace;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+ul li {
+  padding-bottom: 1em;
+  padding-left: 0.75em;
+}
+
+ul li::before {
+  width: 1.25rem;
+  font-family: "Indie Flower";
+  font-size: 1.25em;
+  line-height: 0.75;
+  padding-top: 0.25rem;
+  text-align: center;
+  color: #fff;
+  background-color: purple;
+  border-radius: 0.25em;
+}
+
+ul li::after {
+  content: attr(data-content);
+}
+
+ul li::marker {
+  content: attr(data-icon);
+  font-size: 1.25em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 0.5em 0;
+}
